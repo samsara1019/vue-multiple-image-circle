@@ -1,10 +1,11 @@
 {
   "name": "vue-multiple-image-circle",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/mic.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name mic src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
