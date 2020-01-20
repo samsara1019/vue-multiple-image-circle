@@ -1,28 +1,56 @@
 # vue-multiple-image-circle
-<<<<<<< HEAD
 
 ## Project setup
 ```
-yarn install
+npm i vue-multiple-image-circle
 ```
 
-### Compiles and hot-reloads for development
+or
+
 ```
-yarn serve
+yarn add vue-multiple-image-circle
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+
+
+### in individual components
+```js
+import { MultipleImageCircle } from "vue-multiple-image-circle";
+import "vue-multiple-image-circle/dist/mic.css";
+
+
+export default {
+ components: {
+    "image-circle": MultipleImageCircle
+  },
+  data() {
+      return {
+          profileImages: [] //image url string's array
+      }
+  }
+}
 ```
 
-### Lints and fixes files
-```
-yarn lint
+
+```html
+<image-circle :imageUrls="profileImages" />
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-A Multiple image circular view made with Vue
->>>>>>> c5910b2d7e110f8ccfa7664a79e3612a3c5df1b9
+### custom circle size
+```html
+<image-circle :imageUrls="profileImages" :customWidth="20" />
+```
+
+
+### example
+
+![](./src/assets/images/one.png?display=inline-block)
+![](./src/assets/images/two.png?display=inline-block)
+![](./src/assets/images/three.png?display=inline-block)
+![](./src/assets/images/four.png?display=inline-block)
+
+
+
+---
+## Contribution
+Feel free to contribute!
