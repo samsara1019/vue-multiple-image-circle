@@ -1,5 +1,7 @@
 # vue-multiple-image-circle
 
+https://www.npmjs.com/package/vue-multiple-image-circle
+
 ## Project setup
 ```
 npm i vue-multiple-image-circle
